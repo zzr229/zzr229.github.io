@@ -41,7 +41,7 @@
     <input type="button" value="PLAY" id="play"> 
     <input type="button" value="PAUSE" id="pause">
     <input type="button" value="NEXT" id="next">
-    <input  type="text"  value="i" id="num">
+    <input  type="text"  value="1" id="num">
     </div>
  
  <script type="text/javascript">
@@ -49,7 +49,7 @@
     var PlayButton = document.getElementById("play");
     var PauseButton = document.getElementById("pause");
     var NextButton = document.getElementById("next");
-    var NumText = document.getElementsById("num")
+    var NumText = document.getElementById("num")
  
     var i = 0;
 
@@ -74,7 +74,18 @@
     
     
     };
-    NumText.
+            // 根据集数播放视频  
+    function playEpisode() {  
+        episode = parseInt(NumText.value);  
+        if (isNaN(episode) || episode < 1 || episode > Video.length) {  
+            alert("Invalid episode number");  
+            return;  
+        }  
+        i = episode - 1; 
+        VideoPlay.src="VideoTemp/"+Video[i]; 
+        VideoPlay.play();  
+    } 
+    NumText.addEventListener("input", playEpisode); 
 
 
  </script>
