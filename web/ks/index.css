@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+input {
+    font-size: 1.5em;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+input#switch {
+    background-color: rgb(30, 60, 0);
+    color: rgb(100, 200, 50);
+}
+
+div#stage {
+    position: relative;
+    /* height: 800px; */
+}
+
+div#currentTime {
+    padding: 10px 5px;
+    background-color: red;
+    color: aliceblue;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div#logo {
+    padding: 10px 5px;
+    background-color: green;
+    color: aliceblue;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+div#UI {
+    position: relative;
+    /* margin-top: 8.5em; */
+}
+
+div#UI input {
+    /* position: absolute; */
+    /* top: 50%; */
+    background-color: #0a0a23;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    height: 4em;
+    width: 8em;
+    text-align: center;
+    font-size: 1em;
+    /* min-height: 30px;
+    min-width: 120px; */
+    margin: 10px 10px;
+}
+
+div#UI input:hover {
+    background-color: #002ead;
+    transition: 0.7s;
+}
+
+div#UI input:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+    transition: 0.7s;
+}
+
+div#UI input:active {
+    background-color: #ffbf00;
+}
+
+div#audioStage {
+    padding-top: 62px;
+}
+
+div#audioStage p {
+    background-color: pink;
+    color: white;
+    padding: 1px 3px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+div#audioStage p:hover {
+    background-color: lightblue;
+}
+
+div#header {
+    /* height: 300px; */
+    background: lightblue;
+    font-size: 1em;
+    text-align: center;
+}
+
+.person {
+    /* width: 200px; */
+    width: 12em;
+    margin: 25px;
+    display: inline-block;
+}
+
+.img {
+    /* width: 200px; */
+    width: 12em;
+}
+
+.person span {
+    font-size: 1em;
+}
+
+#footer {
+    /* width: auto; */
+    /* height: 30px; */
+    /* line-height: 30px; */
+    background-color: #808080;
+    text-align: center;
+    font-size: 1em;
+    color: rgb(250, 220, 220);
+    padding: 10px;
+}
+
+/* @media screen and (min-width: 768px) {
+    body {
+        min-width: 800px;
+        min-height: 600px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        min-width: 320px;
+        min-height: 480px;
+    }
+} */
